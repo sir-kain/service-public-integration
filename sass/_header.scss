@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #eee;
+
+  a.logo {
+    img {
+      max-width: 150px;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 3px;
+        a {
+          padding: 5px;
+          color: #111111;
+          &:hover {
+            border-bottom: 1px solid #111;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-entry {
+    display: flex;
+    align-items: center;
+    padding: 7px 7px 0 7px;
+    margin: 0;
+    font-weight: 400;
+    color: #191265;
+    span {
+      font-size: .8em;
+      margin-right: .5em;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  background: #fff;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    max-width: 65%;
+  }
+}
+
+.sp-btn {
+  text-transform: uppercase;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 16px;
+  vertical-align: middle;
+  background: transparent;
+  border: 2px solid #3790ff;
+  color: #191265;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  font-size: 0.6rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 400;
+}
+
+.sp-btn:hover {
+  background: #3790ff;
+  border: 2px solid #3790ff;
+  color: #fff;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+header a.logo img {
+  max-width: 150px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 3px;
+}
+
+header nav ul li a {
+  padding: 5px;
+  color: #111111;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid #111;
+}
+
+header .sidebar-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 7px 0 7px;
+  margin: 0;
+  font-weight: 400;
+  color: #191265;
+}
+
+header .sidebar-entry span {
+  font-size: .8em;
+  margin-right: .5em;
+}
+/*# sourceMappingURL=style.css.map */
