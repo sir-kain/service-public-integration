@@ -1,0 +1,55 @@
+section.sp-intro {
+  display: flex;
+
+  .sp-intro-body {
+    padding: 0 2rem;
+    width: 80%;
+    background: url(/images/bg-particuliers.png) center center no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    hr {
+      width: 40px;
+      margin-left: 0;
+      height: 2px;
+      background: #fff;
+      margin: 2rem 0;
+    }
+
+    small {
+      color: #fff;
+    }
+    .search-input {
+      position: relative;
+      input {
+        background: #fff;
+        border: 1px solid #fff;
+        border-radius: 0;
+        outline: none;
+        height: 2.4rem;
+        width: 95%;
+        font-size: 14px;
+        margin: 8px 0;
+        padding: 0 20px;
+      }
+
+      i {
+        position: absolute;
+        cursor: pointer;
+        right: 30px;
+        top: 15px;
+        font-size: 18px;
+        border-bottom: 2px solid gray;
+        height: 32px;
+        padding: 0 10px;
+        -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease-in-out;
+        opacity: 0.8;
+        &:hover {
+          font-size: 19px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
