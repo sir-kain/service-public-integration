@@ -16,12 +16,32 @@ header {
     ul {
       display: flex;
       li {
-        margin-right: 3px;
+        margin-right: 8px;
         a {
-          padding: 5px;
-          color: #111111;
-          &:hover {
-            border-bottom: 1px solid #111;
+          color: #111;
+          padding: 0 0px 5px 0px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;;
+
+          &.active {
+            color: #3790ff;
+            border-bottom: 2px solid #3790ff;
+          }
+
+          &.active-orange {
+            &:hover {
+              color: #ff0000;
+              border-bottom: 2px solid #ff0000;
+            }
+          }
+          &.active-yellow {
+            &:hover {
+              color: #d8b10f;
+              border-bottom: 2px solid #d8b10f;
+            }
           }
         }
       }
@@ -35,9 +55,15 @@ header {
     margin: 0;
     font-weight: 400;
     color: #191265;
+    cursor: pointer;
+
+    &:hover {
+      color: #3790ff;
+    }
+
     span {
-      font-size: .8em;
-      margin-right: .5em;
+      font-size: 0.8em;
+      margin-right: 0.5em;
     }
   }
 }
