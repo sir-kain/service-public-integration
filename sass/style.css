@@ -161,8 +161,7 @@ section.sp-intro {
   display: flex;
 }
 
-section.sp-intro .sp-intro-body {
-  padding: 0 2rem;
+section.sp-intro .sp-intro-content {
   width: 80%;
   background: url(/images/bg-particuliers.png) center center no-repeat;
   display: -webkit-box;
@@ -174,7 +173,11 @@ section.sp-intro .sp-intro-body {
           flex-direction: column;
 }
 
-section.sp-intro .sp-intro-body hr {
+section.sp-intro .sp-intro-content .sp-intro-body {
+  padding: 0 2rem;
+}
+
+section.sp-intro .sp-intro-content .sp-intro-body hr {
   width: 40px;
   margin-left: 0;
   height: 2px;
@@ -182,15 +185,15 @@ section.sp-intro .sp-intro-body hr {
   margin: 2rem 0;
 }
 
-section.sp-intro .sp-intro-body small {
+section.sp-intro .sp-intro-content .sp-intro-body small {
   color: #fff;
 }
 
-section.sp-intro .sp-intro-body .search-input {
+section.sp-intro .sp-intro-content .sp-intro-body .search-input {
   position: relative;
 }
 
-section.sp-intro .sp-intro-body .search-input input {
+section.sp-intro .sp-intro-content .sp-intro-body .search-input input {
   background: #fff;
   border: 1px solid #fff;
   border-radius: 0;
@@ -202,7 +205,7 @@ section.sp-intro .sp-intro-body .search-input input {
   padding: 0 20px;
 }
 
-section.sp-intro .sp-intro-body .search-input i {
+section.sp-intro .sp-intro-content .sp-intro-body .search-input i {
   position: absolute;
   cursor: pointer;
   right: 30px;
@@ -217,8 +220,48 @@ section.sp-intro .sp-intro-body .search-input i {
   opacity: 0.8;
 }
 
-section.sp-intro .sp-intro-body .search-input i:hover {
+section.sp-intro .sp-intro-content .sp-intro-body .search-input i:hover {
   font-size: 19px;
   opacity: 1;
+}
+
+section.sp-intro .sp-intro-content ul.sp-intro-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5rem 0 0 0;
+  padding: 0;
+}
+
+section.sp-intro .sp-intro-content ul.sp-intro-footer > li {
+  width: 100%;
+}
+
+section.sp-intro .sp-intro-content ul.sp-intro-footer > li.sp-services {
+  background: #3790ff;
+}
+
+section.sp-intro .sp-intro-content ul.sp-intro-footer > li.sp-help {
+  background: #191265;
+}
+
+section.sp-intro .sp-intro-content ul.sp-intro-footer > li a {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+section.sp-intro .sp-intro-content ul.sp-intro-footer > li a span {
+  font-size: 15px;
+}
+
+section.sp-intro .sp-intro-content ul.sp-intro-footer > li a i {
+  font-size: 40px;
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
