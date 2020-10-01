@@ -20,15 +20,15 @@ header {
         a {
           color: #111;
           padding: 0 0px 5px 0px;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           font-weight: 600;
           text-transform: uppercase;
           text-decoration: none;
           transition: all 0.3s ease-in-out;;
 
           &.active {
-            color: #3790ff;
-            border-bottom: 2px solid #3790ff;
+            color: $bleu-light;
+            border-bottom: 2px solid $bleu-light;
           }
 
           &.active-orange {
@@ -54,11 +54,11 @@ header {
     padding: 7px 7px 0 7px;
     margin: 0;
     font-weight: 400;
-    color: #191265;
+    color: $bleu-dark;
     cursor: pointer;
 
     &:hover {
-      color: #3790ff;
+      color: $bleu-light;
     }
 
     span {

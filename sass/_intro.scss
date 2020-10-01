@@ -2,32 +2,37 @@ section.sp-intro {
   display: flex;
 
   .sp-intro-content {
-    width: 80%;
-    background: url(/images/bg-particuliers.png) center center no-repeat;
+    width: 66%;
+    background: url(/images/bg-particuliers.png) center top no-repeat;
     display: flex;
     flex-direction: column;
     .sp-intro-body {
-      padding: 0 2rem;
+      padding: 2rem 1.5rem;
       hr {
         width: 40px;
         margin-left: 0;
-        height: 2px;
-        background: #fff;
-        margin: 2rem 0;
+        height: 1px;
+        background: $white;
+        margin: 1.7rem 0 3rem 0;
+      }
+
+      h1.big-title {
+        margin-top: 1.2rem;
+        line-height: 2.4rem;
       }
 
       small {
-        color: #fff;
+        color: $white;
       }
       .search-input {
         position: relative;
         input {
-          background: #fff;
-          border: 1px solid #fff;
+          background: $white;
+          border: 1px solid $white;
           border-radius: 0;
           outline: none;
           height: 2.4rem;
-          width: 95%;
+          width: 100%;
           font-size: 14px;
           margin: 8px 0;
           padding: 0 20px;
@@ -36,7 +41,7 @@ section.sp-intro {
         i {
           position: absolute;
           cursor: pointer;
-          right: 30px;
+          right: 0;
           top: 15px;
           font-size: 18px;
           border-bottom: 2px solid gray;
@@ -55,31 +60,73 @@ section.sp-intro {
 
     ul.sp-intro-footer {
       display: flex;
-      margin: 5rem 0 0 0;
+      margin: 6rem 0 0 0;
       padding: 0;
 
       & > li {
         width: 100%;
         &.sp-services {
-          background: #3790ff;
+          background: $bleu-light;
         }
         &.sp-help {
-          background: #191265;
+          background: $bleu-dark;
         }
 
         a {
           padding: 2rem;
           display: flex;
           align-items: center;
-          color: #fff;
+          color: $white;
 
           span {
-            font-size: 15px;
+            font-size: 14px;
           }
 
           i {
             font-size: 40px;
             margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .sp-right-bar {
+    padding: 1.2rem 1.5rem;
+    p.medium-title {
+      color: $primary-color;
+      font-size: .9rem;
+    }
+    hr {
+      width: 40px;
+      height: 1px;
+      background: $bleu-light;
+      margin: 5px 0 15px 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        border-bottom: 1px solid #eee;
+        padding: .5em;
+        a {
+          color: $primary-color;
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          i {
+            opacity: .6;
+            font-size: 1.3rem;
+            margin-right: 1rem;
+            width: 30px;
+            text-align: center;
+          }
+          span {
+            transition: all .1s linear;
+            &:hover {
+              color: $bleu-light;
+            }
           }
         }
       }

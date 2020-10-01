@@ -2,14 +2,14 @@
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
-  background: #fff;
+  background: $white;
 
   @media #{$medium-and-up} {
     max-width: 85%;
   }
 
   @media #{$large-and-up} {
-    max-width: 65%;
+    max-width: 67%;
   }
 }
 
@@ -21,8 +21,8 @@
   padding: 0 16px;
   vertical-align: middle;
   background: transparent;
-  border: 2px solid #3790ff;
-  color: #191265;
+  border: 2px solid $bleu-light;
+  color: $bleu-dark;
   box-shadow: none;
   border-radius: 0;
   font-size: 0.6rem;
@@ -35,22 +35,26 @@
   font-weight: 400;
 
   &:hover {
-    background: #3790ff;
-    border: 2px solid #3790ff;
-    color: #fff;
+    background: $bleu-light;
+    border: 2px solid $bleu-light;
+    color: $white;
   }
 }
 
 .medium-title {
-  color: #fff;
+  color: $white;
   font-weight: 200;
   font-size: 1.2rem;
 }
 
 .big-title {
-  color: #fff;
+  color: $white;
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.4rem;
+  font-size: 2.2rem;
+  line-height: 2rem;
   margin: 0;
+}
+
+.bold {
+  font-weight: bold;
 }
