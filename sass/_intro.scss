@@ -95,7 +95,7 @@ section.sp-intro {
     padding: 1.2rem 1.5rem;
     p.medium-title {
       color: $primary-color;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
     hr {
       width: 40px;
@@ -109,21 +109,21 @@ section.sp-intro {
       padding: 0;
       li {
         border-bottom: 1px solid #eee;
-        padding: .5em;
+        padding: 0.5em;
         a {
           color: $primary-color;
           display: flex;
           align-items: center;
           font-size: 12px;
           i {
-            opacity: .6;
+            opacity: 0.6;
             font-size: 1.3rem;
             margin-right: 1rem;
             width: 30px;
             text-align: center;
           }
           span {
-            transition: all .1s linear;
+            transition: all 0.1s linear;
             &:hover {
               color: $bleu-light;
             }

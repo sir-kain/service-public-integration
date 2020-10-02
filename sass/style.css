@@ -46,6 +46,35 @@
   color: #fff;
 }
 
+.sp-btn.red {
+  text-transform: uppercase;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 16px;
+  vertical-align: middle;
+  background: transparent;
+  border: 2px solid #FF0000;
+  color: #191265;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  font-size: 0.6rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 400;
+}
+
+.sp-btn.red:hover {
+  background: #FF0000;
+  border: 2px solid #FF0000;
+  color: #fff;
+}
+
 .medium-title {
   color: #fff;
   font-weight: 200;
@@ -64,19 +93,45 @@
   font-weight: bold;
 }
 
+.no-bottom-border {
+  border-bottom: none !important;
+}
+
+.bg-gray {
+  background: #efeef6;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-p, h1, h2 {
-  padding: 0;
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
   margin: 0;
+  padding: 0;
 }
 
 body {
   background: #f5f5f5;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -97,8 +152,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem;
-  padding-top: 1rem;
+  padding: 1.2rem;
+  padding-top: 2rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -286,7 +341,7 @@ section.sp-intro .sp-right-bar {
 
 section.sp-intro .sp-right-bar p.medium-title {
   color: #00133F;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 section.sp-intro .sp-right-bar hr {
@@ -303,7 +358,7 @@ section.sp-intro .sp-right-bar ul {
 
 section.sp-intro .sp-right-bar ul li {
   border-bottom: 1px solid #eee;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 section.sp-intro .sp-right-bar ul li a {
@@ -318,7 +373,7 @@ section.sp-intro .sp-right-bar ul li a {
 }
 
 section.sp-intro .sp-right-bar ul li a i {
-  opacity: .6;
+  opacity: 0.6;
   font-size: 1.3rem;
   margin-right: 1rem;
   width: 30px;
@@ -326,11 +381,70 @@ section.sp-intro .sp-right-bar ul li a i {
 }
 
 section.sp-intro .sp-right-bar ul li a span {
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 section.sp-intro .sp-right-bar ul li a span:hover {
   color: #3790ff;
+}
+
+.sp-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sp-grid .sp-card {
+  padding: 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.sp-grid .sp-card.fg {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+}
+
+.sp-grid .sp-card p.medium-title {
+  color: #00133F;
+  font-size: 1rem;
+}
+
+.sp-grid .sp-card hr {
+  margin: 0.5rem 0 0 0;
+  width: 40px;
+  height: 1px;
+  background: #3790ff;
+}
+
+.sp-grid .sp-card hr.red {
+  background: #FF0000;
+}
+
+.sp-grid .sp-card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 220px;
+}
+
+.sp-grid .sp-card ul li a {
+  color: #00133F;
+  font-size: 11px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.sp-grid .sp-card ul li a:hover {
+  color: #3790ff;
+}
+
+.sp-grid .sp-card a.sp-btn {
+  margin-top: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */

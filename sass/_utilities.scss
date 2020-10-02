@@ -14,30 +14,9 @@
 }
 
 .sp-btn {
-  text-transform: uppercase;
-  display: inline-block;
-  height: 28px;
-  line-height: 28px;
-  padding: 0 16px;
-  vertical-align: middle;
-  background: transparent;
-  border: 2px solid $bleu-light;
-  color: $bleu-dark;
-  box-shadow: none;
-  border-radius: 0;
-  font-size: 0.6rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  font-weight: 400;
-
-  &:hover {
-    background: $bleu-light;
-    border: 2px solid $bleu-light;
-    color: $white;
+  @include sp-btn();
+  &.red {
+    @include sp-btn($red);
   }
 }
 
@@ -57,4 +36,12 @@
 
 .bold {
   font-weight: bold;
+}
+
+.no-bottom-border {
+  border-bottom: none !important;
+}
+
+.bg-gray {
+  background: #efeef6;
 }
