@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="sass/style.css" />
   </head>
   <body>
-    <header class="container">
+    <header id="header" class="container">
       <a href="/" class="logo">
         <img src="images/logo-servicepublic.png" alt="" />
       </a>
@@ -47,11 +47,27 @@
 
       <a href="#" class="sp-btn">Mon service public</a>
 
-      <div class="sidebar-entry">
+      <div class="sidenav-entry">
         <span>Menu</span>
         <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
     </header>
+
+    <nav class="sidenav hide">
+      <p class="medium-title bold">Autres ressources</p>
+      <hr class="red"/>
+      <ul>
+        <li><a href="#">Annuaire de l'Administration</a></li>
+        <li><a href="#">Map des services publics</a></li>
+        <li><a href="#">e-Participation</a></li>
+        <li><a href="#">Formulaires & Modèles de lettres</a></li>
+        <li><a href="#">Textes de références</a></li>
+        <li><a href="#">Glossaire</a></li>
+        <li><a href="#">Foires aux questions</a></li>
+        <li><a href="#">Collectivités territoriales</a></li>
+        <li><a href="#">Recherche interne</a></li>
+      </ul>
+    </nav>
 
     <section class="container sp-intro">
       <div class="sp-intro-content">
@@ -307,7 +323,7 @@
         <i class="fa fa-laptop" aria-hidden="true"></i>
         <span class="bold">Sites web</span>
       </a>
-      <a href="#">
+      <a href="#" class="no-right-border">
         <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
         <span class="bold">E-participation</span>
       </a>
@@ -371,6 +387,27 @@
           <li><a href="#">Crédits</a></li>
         </ul>
       </div>
+    </section>
+
+    <section class="container bg-gray sp-grid extern-link">
+      <a href="#">Presidence.sn</a>
+      <a href="#">Gouvernement.sn</a>
+      <a href="#">Assemblee-nationale.sn</a>
+      <a href="#">Inverstirausenegal.sn</a>
+      <a href="#" class="no-right-bottom">Adie.sn</a>
+    </section>
+
+    <section class="container footer">
+      <small
+        >© 2018 Service Public Sénégal — Conception : Agence De l’Informatique
+        de l’Etat</small
+      >
+    </section>
+
+    <section class="container gotop">
+      <a href="#header"
+        ><i class="fa fa-arrow-circle-up" aria-hidden="true"></i
+      ></a>
     </section>
   </body>
 </html>

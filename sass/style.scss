@@ -125,13 +125,97 @@
   ul {
     margin-top: 0.7rem;
     li {
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.2rem;
       a {
         font-size: 11px;
         color: white;
         transition: all 0.2 linear;
         &:hover {
           color: $bleu-dark;
+        }
+      }
+    }
+  }
+}
+
+.extern-link {
+  padding: 1.5rem;
+  justify-content: center;
+  a {
+    font-size: 11px;
+    padding: .1rem .4rem;
+    color: $bleu-dark;
+    border-right: 1px solid #ccc;
+    transition: all .2s linear;
+    &:hover {
+      color: $bleu-light;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  small {
+    color: #777;
+    font-size: 11px;
+    transition: .2s linear;
+    &:hover {
+      color: $bleu-dark;
+    }
+  }
+}
+
+.gotop {
+  text-align: center;
+  padding: .5rem;
+  i {
+    color: $bleu-light;
+    font-size: 40px;
+    transition: .2s linear;
+    &:hover {
+      color: $bleu-dark;
+    }
+  }
+}
+
+.sidenav {
+  z-index: 1;
+  height: 100vh;
+  width: 310px;
+  background: $bleu-dark;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 2.2rem 1.5rem;
+  overflow-x: hidden; 
+
+  p.medium-title {
+    font-size: 13px;
+  }
+
+  hr {
+    margin: 0.5rem 0 0 0;
+    width: 40px;
+    height: 1px;
+    background: $bleu-light;
+    &.red {
+      background: $red;
+      border-color: red;
+    }
+  }
+
+  ul {
+    padding: 1.1rem 0;
+    li {
+      padding: .5rem 0;
+      border-bottom: 1px solid #36287b;
+      a {
+        transition: .2s linear;
+        font-size: 11px;
+        color: $white;
+        &:hover {
+          color: $bleu-light;
         }
       }
     }

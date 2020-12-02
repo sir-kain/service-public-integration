@@ -1,10 +1,20 @@
-new Glider(document.querySelector('.glider'), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-  // dots: '.dots',
-  // arrows: {
-  //   prev: '.glider-prev',
-  //   next: '.glider-next'
-  // }
+window.addEventListener("DOMContentLoaded", () => {
+  const $sidenav = document.querySelector(".sidenav");
+  const $sidenavEntry = document.querySelector(".sidenav-entry");
+  $sidenavEntry.addEventListener("click", () => {
+    $sidenav.classList.remove("hide");
+  });
+
+  window.addEventListener("click", () => {
+    if (!$sidenav.classList.contains("hide")) {
+      $sidenav.classList.add("hide");
+    }
+  });
+
+  $sidenavEntry.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+  $sidenav.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
 });

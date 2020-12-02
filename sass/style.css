@@ -97,12 +97,20 @@
   border-bottom: none !important;
 }
 
+.no-right-border {
+  border-right: none !important;
+}
+
 .bg-gray {
   background: #efeef6;
 }
 
 .bg-bleu {
   background: #3790ff;
+}
+
+.hide {
+  display: none !important;
 }
 
 * {
@@ -182,8 +190,8 @@ header nav ul li a {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 header nav ul li a.active {
@@ -201,7 +209,7 @@ header nav ul li a.active-yellow:hover {
   border-bottom: 2px solid #d8b10f;
 }
 
-header .sidebar-entry {
+header .sidenav-entry {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,11 +223,11 @@ header .sidebar-entry {
   cursor: pointer;
 }
 
-header .sidebar-entry:hover {
+header .sidenav-entry:hover {
   color: #3790ff;
 }
 
-header .sidebar-entry span {
+header .sidenav-entry span {
   font-size: 0.8em;
   margin-right: 0.5em;
 }
@@ -550,7 +558,7 @@ section.sp-intro .sp-right-bar ul li a span:hover {
 }
 
 .contacts ul li {
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .contacts ul li a {
@@ -562,5 +570,105 @@ section.sp-intro .sp-right-bar ul li a span:hover {
 
 .contacts ul li a:hover {
   color: #191265;
+}
+
+.extern-link {
+  padding: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.extern-link a {
+  font-size: 11px;
+  padding: .1rem .4rem;
+  color: #191265;
+  border-right: 1px solid #ccc;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.extern-link a:hover {
+  color: #3790ff;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer small {
+  color: #777;
+  font-size: 11px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.footer small:hover {
+  color: #191265;
+}
+
+.gotop {
+  text-align: center;
+  padding: .5rem;
+}
+
+.gotop i {
+  color: #3790ff;
+  font-size: 40px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.gotop i:hover {
+  color: #191265;
+}
+
+.sidenav {
+  z-index: 1;
+  height: 100vh;
+  width: 310px;
+  background: #191265;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 2.2rem 1.5rem;
+  overflow-x: hidden;
+}
+
+.sidenav p.medium-title {
+  font-size: 13px;
+}
+
+.sidenav hr {
+  margin: 0.5rem 0 0 0;
+  width: 40px;
+  height: 1px;
+  background: #3790ff;
+}
+
+.sidenav hr.red {
+  background: #FF0000;
+  border-color: red;
+}
+
+.sidenav ul {
+  padding: 1.1rem 0;
+}
+
+.sidenav ul li {
+  padding: .5rem 0;
+  border-bottom: 1px solid #36287b;
+}
+
+.sidenav ul li a {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  font-size: 11px;
+  color: #fff;
+}
+
+.sidenav ul li a:hover {
+  color: #3790ff;
 }
 /*# sourceMappingURL=style.css.map */

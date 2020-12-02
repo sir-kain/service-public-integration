@@ -24,7 +24,7 @@ header {
           font-weight: 600;
           text-transform: uppercase;
           text-decoration: none;
-          transition: all 0.3s ease-in-out;
+          transition: 0.2s linear;
 
           &.active {
             color: $bleu-light;
@@ -48,7 +48,7 @@ header {
     }
   }
 
-  .sidebar-entry {
+  .sidenav-entry {
     display: flex;
     align-items: center;
     padding: 7px 7px 0 7px;

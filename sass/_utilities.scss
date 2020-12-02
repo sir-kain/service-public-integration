@@ -42,10 +42,18 @@
   border-bottom: none !important;
 }
 
+.no-right-border {
+  border-right: none !important;
+}
+
 .bg-gray {
   background: #efeef6;
 }
 
 .bg-bleu {
   background: $bleu-light;
+}
+
+.hide {
+  display: none !important;
 }
